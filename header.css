@@ -5,29 +5,27 @@
     display: inline-block;
 }
 
-    ,cabeçalho { 
+    .cabeçalho { 
         background-color: seashell;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        position: relative
         
         .container {
             display: flex;
             align-items: center;
-            }
-            .cabeçalho {
-          background-color: var(--branco);
-         display: flex;
-      justify-content: space-between;
-                align-items: center;
-            }
-            .container {
-                display: flex;
-                align-items: center;
-            }
-            <body>
-    <header class="cabeçalho">
-        <span class="cabeçalho__menu-hamburguer"></span>
-        <img src="img/Logo.svg" alt="Logo da AluraBooks">
-    </header>
-</body>
+       } 
+
+       .container__imagem {
+        padding:1em;
+    }
+
+  .lista-menu {
+    display: none;
+    position:absolute;
+    } 
+
+    .container__botão:checked ~ .lista-menu {
+        display: block;
+        }
